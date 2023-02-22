@@ -1,2 +1,2 @@
 # LeetCode
-LeetCode Solutions with different brancese and commits!
+LeetCode Solutions on Leet-Solved folder!
