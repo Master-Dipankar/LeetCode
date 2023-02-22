@@ -80,9 +80,9 @@
 
 class Solution:
     def findComplement(self, num):
-        binary = bin(num)[2:] #i converted the integer to binary and remove the '0b' prefix.
+        binary = bin(num)[2:]  # i converted the integer to binary and remove the '0b' prefix.
 
-        #here i fliped each character in the binary string with if-eles.
+        # here i fliped each character in the binary string with if-eles.
         flipped_binary = ""
         for char in binary:
             if char == '0':
@@ -90,6 +90,11 @@ class Solution:
             else:
                 flipped_binary += '0'
 
-        #here i have converted the flipped binary string to an integer and return it.
+        # here i have converted the flipped binary string to an integer and return it.
         return int(flipped_binary, 2)
 
+
+solution = Solution()
+num = 5
+result = solution.findComplement(num)
+print(result)
